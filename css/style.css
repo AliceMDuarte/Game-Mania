@@ -30,6 +30,7 @@ header{
     justify-content: space-between;
 }
 .banner{
+    margin-left: -63px ;
     height: 600px;
     background-image: url(../img/banner.png);
     background-repeat: no-repeat;
@@ -41,7 +42,7 @@ header{
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Sanchez', serif;
-    font-size: 20px   
+    font-size: 30px   
 }
 .posicao-texto{
    justify-content: center;

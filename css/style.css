@@ -42,8 +42,100 @@ header{
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Sanchez', serif;
-    font-size: 30px   
+    font-size: 25px;
+}
+
+.texto-banner a{
+    background-color: #2F10F0 ;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+   border-radius: 5px; 
+}
+.texto-banner p{
+    margin-bottom: 50px;
 }
 .posicao-texto{
+    display: flex;
    justify-content: center;
+}
+.secao-lancamentos{
+    background-color: #8775F2;
+}
+.secao-lancamentos h1{
+    color: #ffff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font size: 30px;
+   font-family: 'Sanchez', serif;
+}
+.secao-lancamentos img{ 
+    width: 300px;
+    align-items:unset;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; 
+}
+
+.secao-noticias{
+    background-color: #2F10F0;
+    background-repeat: no-repeat;
+    background-position: center;   
+}
+.secao-noticias h2{
+    justify-content: center
+    color: black;
+    font-family: 'Sanchez', serif ;
+    font-size: 30px;
+}
+.secao-noticias p{
+    color: #ffff;
+    font-family: 'Sanchez', serif;
+    font-size: 20px;
+}
+.secao-noticias a img{
+width: 400px;
+}
+
+.barras{
+    width: 50px;
+    display: none;
+}
+
+.posicionamento-header{
+    position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+    .container-grid{
+        width: 90%;
+    }
+    .menu a{
+        font-size: 10px;
+    }
+    .logo{
+        width: 200px;
+    }
+}
+@media screen and (max-width: 768px){
+    h1{
+        color: blue;
+    }
+    .barras{
+        display: inline-block;
+    }
+    .menu{
+        display: none;
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        top: 0;
+        right: 60px;
+    }
+    .menu a{
+        text-align: center;
+        padding: 15px;
+    }
 }

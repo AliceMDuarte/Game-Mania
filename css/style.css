@@ -44,7 +44,6 @@ header{
     font-family: 'Sanchez', serif;
     font-size: 25px;
 }
-
 .texto-banner a{
     background-color: #2F10F0 ;
     color: white;
@@ -62,23 +61,32 @@ header{
 }
 .secao-lancamentos{
     background-color: #8775F2;
+    padding: 30px;
+    display: flex;
+}
+.secao-lancamentos .container{
+    display: flex;
+    justify-content: space-between;
+}
+.bloco-lancamentos{
+    margin-top: 25px;
+    margin-left: 80px;
+    width: 100%;
+    height: 90%;
 }
 .secao-lancamentos h1{
     color: #ffff;
     text-align: center;
-    display: flex;
-    justify-content: center;
+    text-decoration: underline;
     font size: 30px;
-   font-family: 'Sanchez', serif;
+    font-family: 'Sanchez', serif;
 }
-.secao-lancamentos img{ 
+.secao-lancamentos img{
     width: 300px;
-    align-items:unset;
-    display: flex;
     justify-content: space-between;
-    flex-direction: column; 
-}
+    align-items: center;  
 
+}
 .secao-noticias{
     background-color: #2F10F0;
     background-repeat: no-repeat;
@@ -86,8 +94,9 @@ header{
 }
 .secao-noticias h2{
     justify-content: center
-    color: black;
-    font-family: 'Sanchez', serif ;
+    color:  black;
+    font-family: 'Sanchez', serif;
+    text-decoration: underline;
     font-size: 30px;
 }
 .secao-noticias p{
@@ -96,18 +105,19 @@ header{
     font-size: 20px;
 }
 .secao-noticias a img{
-width: 400px;
+width: 600px;
 }
-
+.conteudo-noticias .container{
+    display: flex;
+    justify-content: space-between;
+}
 .barras{
     width: 50px;
     display: none;
 }
-
 .posicionamento-header{
     position: relative;
 }
-
 @media screen and (max-width: 1200px) {
     .container-grid{
         width: 90%;
@@ -119,6 +129,121 @@ width: 400px;
         width: 200px;
     }
 }
+
+.secao-em-alta{
+    background-color: black;
+    padding: 30px;
+
+.secao-em-alta .container{
+    display: flex;
+    justify-content: space-between;
+}
+}
+.secao-em-alta img{
+    width: 200px;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.bloco-em-alta{
+    width: 100%;
+    height: 90%;
+}
+.bloco-em-alta h1{
+    text-decoration: underline;
+    font-family: 'Sanchez', serif;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+.contant-em-alta{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.produtos-em-alta{
+    color: blue;
+    margin-bottom: 32px;
+    background: var(--gradient);
+    box-shadow: 0px 0px 10px rgb(0,0,0), 0px 0px 50px;
+    flex direction: column;
+    display: flex
+    align-itens: center;
+}
+.ver-mais{
+    color: #2F10F0;
+    font-family: 'Sanchez', serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+footer{
+    background-color: #B3A7FB; 
+}
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+.links{
+    color: black;
+}
+.links h2{
+    font size: 24px;
+}
+.links a{
+    color: black;
+    text-decoration: none;
+    font-family:'Sanchez', serif;
+    font-size: 18;
+}
+.links-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+.logo-rodape{
+    width: 100px; 
+    height: 100px;
+}
+.sociais h2{
+    color: black;
+    font-size: 18;
+    font-family:'Sanchez', serif;
+}
+.sociais form{
+    display: flex;
+    font-size: 18;
+    font-family:'Sanchez', serif;
+    margin-bottom: 8px;
+}
+.sociais input[type="email"]{
+    height: 37px;
+    width: 195px;
+}
+.sociais input[type="email"] ::placeholder{
+    color: #2F10F0;
+    font-weight: bold;
+}
+button{
+    width: 160px;
+    background-color: #2F10F0;
+    border: none;
+    font-size: 18px;
+}
+.siga-nos{
+display: flex;
+justify-content: space-between;
+margin-top: 50px;
+}
+.siga-nos a{
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+    height: 50px;
+}
+    
 @media screen and (max-width: 768px){
     h1{
         color: blue;
@@ -138,4 +263,5 @@ width: 400px;
         text-align: center;
         padding: 15px;
     }
+
 }

@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body onload="mostrarPopup()">
+<body onload="mostrarPopup()", onload="renderizarLancamentos()">
     <header>
         <div class="container-grid posicionamento-header">
             <a href=""><img class="logo" src="img/Logo.png" alt="Logo do Site"></a>
@@ -20,10 +20,23 @@
                 <a href="">Procurar</a>
                 
             </nav>
-           <a href="" onclick="mostrarMenu()"><img class="barras" src="img/menu.png" alt="Menu de Barras"></a>
+           <a href="#" id="barras"><img class="barras" src="img/menu.png" alt="Menu de Barras"></a>
         </div>
     </header>
-    <div class="banner">
+    <div id="carrossel" class="carrossel-caption d-none d-md-block">
+        <img src="img/banner.png" alt="banner inicial">
+        <a href="">Comprar Agora</a>
+        <p>Edições Limitadas e Exclusivas</p>
+        
+        <img src="img/Warcraft Lançamentos-1.png" alt="Warcraft banner">
+        <a href="">Comprar Agora</a>
+        <p> Jogo Warcraft</p>
+
+        <img src="img/Meta Lançamentos-5.png" alt="Metaverso banner">
+        <a href="">Comprar Agora</a>
+        <p>Óculos Realidade Virtual-Metaverso</p>
+      </div>
+        <!-- <div class="banner">
         <div class="container-grid posicao-texto">
         <div class="texto-banner">
 
@@ -32,29 +45,51 @@
             <a href="">Comprar Agora</a>
              </div>
     </div>
-    </div>
-    <section class="secao-lancamentos">
+    </div> -->
+<section class="secao-lancamentos">
         <div class="container">
-            <div class="bloco-lancamentos">
+        <div class="bloco-lancamentos">
         <h1>Lançamentos</h1>
-        <div class="contant-lancamentos">
-            <div class="produtos-lancamentos">
+        <div id="espaco-lancamentos" class="content-lancamentos">
+        <div class = cardlancamentos>
             <a href=""><img src="img/Warcraft Lançamentos-1.png"></a>
+            <h3>Nome do Produto</h3>
+            <p>Valor:</p>
+        </div>
+        <div class = cardlancamentos>
             <a href=""> <img src="img/Meta Lançamentos-5.png"></a>
+            <h3>Nome do Produto</h3>
+            <p>Valor:</p>
+        </div>
+        <div class = cardlancamentos>
             <a href=""><img src="img/óculos Lançamentos.png"></a>
+            <h3>Nome do Produto</h3>
+            <p>Valor:</p>
+            </div>
+        <div class = cardlancamentos>
             <a href=""><img src="img/Warcraft Lançamentos-1.png"></a>
+            <h3>Nome do Produto</h3>
+            <p>Valor:</p>
+        </div>
+        <div class = cardlancamentos>
             <a href=""> <img src="img/Meta Lançamentos-5.png"></a>
+            <h3>Nome do Produto</h3>
+            <p>Valor:</p>
+        </div>
+        <div class = cardlancamentos>
             <a href=""><img src="img/óculos Lançamentos.png"></a>
+            <h3>Nome do Produto</h3>
+            <p>Valor:</p>
         </div>
         </div>
         </div> 
         </div>
 
-    </section>
-    <section class="secao-noticias">
+</section>
+<section class="secao-noticias">
         <div class="container">
             <div class="bloco-noticias">
-            <h2>Notícias</h2>
+            <h1>Notícias</h1>
             <div id="espaco-noticias" class="content-news">
             <div class="row">
             <div class="texto-noticias col-md-6">
@@ -70,24 +105,54 @@
         </div>
         </div>
     </div>
-    </section>
+</section>
 
 <section class= "secao-em-alta">
     <div class="container">
     <div class="bloco-em-alta">
         <h1>EM ALTA!</h1>
-        <div class="contant-em-alta">
+        <div id="espaco-em-alta" class="content-em-alta">
         <div class="produtos-em-alta">
- 
+    <div class = cardemalta>
         <a href><img src="img/em_alta_1.png"></a>
+        <h3>Nome do Produto</h3>
+            <p>Valor:</p>
+    </div>
+    <div class = cardemalta>
         <a href><img src="img/em_alta_2.png"></a>
+        <h3>Nome do Produto</h3>
+            <p>Valor:</p>
+    </div>
+    <div class = cardemalta>
         <a href><img src="img/em_alta_3.png"></a>
+        <h3>Nome do Produto</h3>
+            <p>Valor:</p>
+    </div>
+    <div class = cardemalta>
         <a href><img src="img/em_alta_4.png"></a>
+        <h3>Nome do Produto</h3>
+            <p>Valor:</p>
+    </div>
+    <div class = cardemalta>
         <a href><img src="img/em_alta_2.png"></a>
+        <h3>Nome do Produto</h3>
+            <p>Valor:</p>
+    </div>
+    <div class = cardemalta>
         <a href><img src="img/em_alta_3.png"></a>
+        <h3>Nome do Produto</h3>
+            <p>Valor:</p>
+    </div>
+    <div class = cardemalta>
         <a href><img src="img/em_alta_4.png"></a>
+        <h3>Nome do Produto</h3>
+            <p>Valor:</p>
+    </div>
+    <div class = cardemalta>
         <a href><img src="img/em_alta_1.png"></a>
-
+        <h3>Nome do Produto</h3>
+            <p>Valor:</p>
+    </div>
         <div class="ver-mais">
             <a href="">VER MAIS</a>
             </div>
@@ -124,11 +189,9 @@
 
             </div>
         </div>
-<img class="logo-rodape" src="img/Logo.png" alt="Logo Game Mania">
-<div class="sociais"> 
-    <h2>
-        Cadastre-se, ganhe cupons exclusivos e fique por dentro das nossas promoções!
-    </h2>
+        <img class="logo-rodape" src="img/Logo.png" alt="Logo Game Mania">
+        <div class="sociais"> 
+    <h1>Cadastre-se!</h1>
     <form action="">
         <input id="campo-email" type="email" placeholder="E-mail" required>
         <button onclick="enviarEmail()">Cadastrar</button>
@@ -141,24 +204,25 @@
 
     </div>
 
-</div>
+    </div>
     </div>
 </footer>
 
-    <script>
+<script>
         let menu = document.getElementById("menu");
 
         function mostrarMenu(){
             if(menu.style.display != "flex"){
-                menu.style.display = "flex"
-            else{
-                menu.style.display = "none"
-            }
+                menu.style.display = "flex"}
+            else{menu.style.display = "none"
             }
         }
+        
     
-    </script>
-    <script src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</script>
+<script src="js/jquery-3.6.0.js"></script>
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
+
 </html>

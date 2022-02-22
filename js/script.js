@@ -1,6 +1,37 @@
-function mostrarPopup(){
-    window.alert("Olá Gamer! Seja bem vindo!")
+$(document).ready(function(){
+    $("#barras").click(function(){
+    $("#menu").toggleClass("#menu-ativo")
+    })
+})
+
+$(document).ready(function(){
+    $("#carrossel img:eq(0)").addclass("banner-ativo").show()
+})
+
+function slide(){
+    setInterval(slide, 2000)
+
+    if($(".banner-ativo").next().length){
+        $(".banner-ativo").removeclass("banner-ativo").hide().next().addclass("banner-ativo").show()
+    }else{
+        $(".banner-ativo").removeclass().hide()
+        $("#carrossel img:eq(0)").addclass("banner-ativo").show()
+    }
 }
+
+//     $("#barras").click(function(){
+//         if($("#menu").hasclass("#menu-ativo")){
+//             $("#menu").removeclass("#menu-ativo")
+//         }else{
+//             $("#menu").addclass("menu-ativo")
+//         }
+
+//     })
+// })
+
+// function mostrarPopup(){
+//     window.alert("Olá Gamer! Seja bem vindo!")
+// }
 
 let email = document.getElementById("campo-email");
 
@@ -9,26 +40,13 @@ function enviarEmail(){
     console.log(emailDigitado)
 }
 
-let listaNoticias = [
-{
-    título: "Valorant aumenta preço de pacotes de XP",
-    descricao: "Comunidade reclama dos valores abusivos e tema vira discussão no Fórum de discussão dos jogadores"
-}
-]
-function renderizarNoticias(){
-    
-}
-
-
-
-
 let listaProdutosLancamentos = [
     {
-        nomeProduto: "óculos de realidade virtual",
-        valor: "R$ 150,00",
+    nomeProduto: "Jogo Warcraft",
+    valor: "R$ 150,00",
     },
 {
-    nomeProduto: "óculos de realidade virtual",
+    nomeProduto: "Conjunto óculos de realidade virtual",
     valor: "R$ 150,00",
 },
 {
@@ -36,11 +54,11 @@ let listaProdutosLancamentos = [
     valor: "R$ 150,00",
 },
 {
-    nomeProduto: "óculos de realidade virtual",
+    nomeProduto: "Jogo Warcraft",
     valor: "R$ 150,00",
 },
 {
-    nomeProduto: "óculos de realidade virtual",
+    nomeProduto: "Conjunto óculos de realidade virtual",
     valor: "R$ 150,00",
 },
 {
@@ -48,37 +66,19 @@ let listaProdutosLancamentos = [
     valor: "R$ 150,00",
 }
 ]
-let listaProdutosEmAlta = [
-    {
-        nomeProduto: "Gameboy",
-        valor: "R$ 150,00",
-    },
-{
-    nomeProduto: "Playstation",
-    valor: "R$ 150,00",
-},
-{
-    nomeProduto: "Mouse led",
-    valor: "R$ 150,00",
-},
-{
-    nomeProduto: "Teclado led",
-    valor: "R$ 150,00",
-},
-{
-    nomeProduto: "Playstation",
-    valor: "R$ 150,00",
-},
-{
-    nomeProduto: "Mouse led",
-    valor: "R$ 150,00",
-},
-{
-    nomeProduto: "Teclado led",
-    valor: "R$ 150,00",
-},
-{
-    nomeProduto: "Gameboy",
-    valor: "R$ 150,00",
+
+function renderizarLancamentos(){
+    let espaco = document.getElementById("espaco-lancamentos");
+
+    let template ="";
+    for (let index = 0; index < listaProdutosLancamentos.length; index++) {
+        const ProdutosLancamentos = listaProdutosLancamentos[index];
+        
+        template += ` <div class ="cardlancamentos">
+        <a href=""><img src="img/Warcraft Lançamentos-1.png"></a>
+        <h3>${ProdutosLancamentos.titulo}/h3>
+        <p>${ProdutosLancamentos.valor}</p>
+    </div>`    
+    }
+    espaco.innerHTML = template;
 }
-]

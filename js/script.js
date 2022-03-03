@@ -4,20 +4,20 @@ $(document).ready(function(){
     })
 })
 
-$(document).ready(function(){
-    $("#carrossel img:eq(0)").addclass("banner-ativo").show()
-})
+// $(document).ready(function(){
+//     $("#carrossel img:eq(0)").addclass("banner-ativo").show()
+// })
 
-function slide(){
-    setInterval(slide, 2000)
+// function slide(){
+//     setInterval(slide, 2000)
 
-    if($(".banner-ativo").next().length){
-        $(".banner-ativo").removeclass("banner-ativo").hide().next().addclass("banner-ativo").show()
-    }else{
-        $(".banner-ativo").removeclass().hide()
-        $("#carrossel img:eq(0)").addclass("banner-ativo").show()
-    }
-}
+//     if($(".banner-ativo").next().length){
+//         $(".banner-ativo").removeclass("banner-ativo").hide().next().addclass("banner-ativo").show()
+//     }else{
+//         $(".banner-ativo").removeclass().hide()
+//         $("#carrossel img:eq(0)").addclass("banner-ativo").show()
+//     }
+// }
 
 //     $("#barras").click(function(){
 //         if($("#menu").hasclass("#menu-ativo")){
@@ -29,9 +29,9 @@ function slide(){
 //     })
 // })
 
-// function mostrarPopup(){
-//     window.alert("Olá Gamer! Seja bem vindo!")
-// }
+function mostrarPopup(){
+    window.alert("Olá Gamer! Seja bem vindo!")
+}
 
 let email = document.getElementById("campo-email");
 
